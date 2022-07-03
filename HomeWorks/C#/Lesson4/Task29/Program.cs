@@ -7,9 +7,8 @@
         else Console.Write($"{OutArray[iOut]}, ");
     }
 }
-int[] ArrayIn()
+int[] ArrayIn(int ArraySize)
 {
-    int ArraySize = new Random().Next(1, 9);
     int[] InArray = new int[ArraySize];
     for (int iIn = 0; iIn < ArraySize; iIn++)
     {
@@ -18,4 +17,4 @@ int[] ArrayIn()
     return InArray;
 }
 
-ArrayOut(ArrayIn());
+ArrayOut(ArrayIn(8));
