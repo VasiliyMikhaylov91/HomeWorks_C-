@@ -4,10 +4,10 @@
     int siting = Convert.ToInt32(Console.ReadLine());
     return siting;
 }
-int SummBetween(int minNumber, int maxNumber, int summ = 0)
+int SummBetween(int minNumber, int maxNumber)
 {
-    if (maxNumber == minNumber) return summ += minNumber;
-    else return SummBetween(minNumber + 1, maxNumber, summ += minNumber);
+    if (maxNumber == minNumber) return minNumber;
+    else return minNumber + SummBetween(minNumber + 1, maxNumber);
 
 }
 
